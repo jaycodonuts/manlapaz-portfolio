@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#" onclick="showWelcome()">Diego Miguel C. Manlapaz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">
+                        <i class="bi bi-moon-fill" id="themeIcon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="main-container">
+    <div class="container">
+        <div class="content-card fade-in">
+            <div class="row align-items-center">
+
+                <div class="col-lg-4 col-md-5 text-center mb-4 mb-md-0">
+                    <div class="profile-wrapper">
+                        <img src="diego.JPG" class="img-fluid rounded-circle profile-img" alt="Diego Miguel Manlapaz">
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-md-7">
+                    <div class="content-section">
+                        <h1 id="title" class="title-text">Hi, I'm Diego Miguel!</h1>
+                        <p id="content" class="content-text">I'm a 2nd Year IT student and aspiring web designer passionate about creating modern, user-friendly digital experiences. Welcome to my portfolio where I showcase my journey in tech and the projects I've built along the way.</p>
+
+                        <div class="social-icons mt-4">
+                            <a href="https://www.facebook.com/jaycoconuts" target="_blank" title="Facebook" class="social-link">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/diorxdiego/" target="_blank" title="Instagram" class="social-link">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@dmmanlapaz" target="_blank" title="YouTube" class="social-link">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/diego-miguel-manlapaz-391b4935a/" target="_blank" title="LinkedIn" class="social-link">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="content-card">
+            <h2 class="section-title text-center mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="about-content">
+                        <p class="about-text">
+                            I'm <strong>Diego Miguel C. Manlapaz</strong>, a 2nd Year IT student with a passion for web design. I live in Silangan, San Mateo, Rizal. 
+                            I like to collect toys like Funko Pops, Perfumes, and Console Games. 
+                            I specialize in creating responsive, visually appealing websites using HTML, CSS, JavaScript, and Bootstrap.
+                        </p>
+                        <p class="about-text">
+                            My journey in tech has led me to develop various projects including e-commerce platforms, educational games, 
+                            and business websites. I believe in the power of technology to solve real-world problems and create meaningful user experiences.
+                        </p>
+                        
+                        <div class="skills-section mt-4">
+                            <h4 class="skills-title">Skills & Technologies</h4>
+                            <div class="row mt-3">
+                                <div class="col-md-6">
+                                    <ul class="skills-list">
+                                        <li><i class="bi bi-check-circle-fill"></i> Front-end Development (HTML, CSS, JavaScript)</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Bootstrap Framework</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> UI/UX Design</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="skills-list">
+                                        <li><i class="bi bi-check-circle-fill"></i> Responsive Web Design</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> E-commerce Solutions</li>
+                                        <li><i class="bi bi-check-circle-fill"></i> Problem Solving</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="projects-section">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">My Projects</h2>
+        <div class="row g-4">
+            
+            <div class="col-md-4">
+                <div class="project-card" onclick="showProject('jaycollectibles')">
+                    <div class="project-logo project-logo-img">
+                        <img src="Darth.png" alt="JayCollectibles Logo" class="project-img">
+                    </div>
+                    <h4 class="project-title">JayCollectibles</h4>
+                    <p class="project-preview">Click to learn more</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card" onclick="showProject('barangayquest')">
+                    <div class="project-logo project-logo-img">
+                        <img src="bth.png" alt="Barangay Quest Logo" class="project-img">
+                    </div>
+                    <h4 class="project-title">Barangay Quest: Trapo Hunter</h4>
+                    <p class="project-preview">Click to learn more</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card" onclick="showProject('aromageeks')">
+                    <div class="project-logo project-logo-img">
+                        <img src="AG.png" alt="AromaGeeks Logo" class="project-img">
+                    </div>
+                    <h4 class="project-title">AromaGeeks</h4>
+                    <p class="project-preview">Click to learn more</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="content-card">
+            <h2 class="section-title text-center mb-4">Get In Touch</h2>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-content">
+                        <p class="contact-text text-center">
+                            Feel free to reach out for collaborations or just to connect!
+                        </p>
+                        <div class="contact-info mt-4">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="contact-item">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <div>
+                                            <h5>Email</h5>
+                                            <p><a href="mailto:manlapazdiego@gmail.com">manlapazdiego@gmail.com</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="contact-item">
+                                        <i class="bi bi-phone-fill"></i>
+                                        <div>
+                                            <h5>Phone</h5>
+                                            <p><a href="tel:09297617253">09297617253</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="projectModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModalTitle">Project Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+
+                <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                    <div class="carousel-inner" id="projectCarouselInner">
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <p id="projectModalDescription" class="project-description">Project description goes here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2026 Diego Miguel Manlapaz. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
